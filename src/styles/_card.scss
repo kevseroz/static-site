@@ -1,0 +1,186 @@
+.album {
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.page-position {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.album-position {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+      min-width: 220px;
+      max-width: 800px;
+      width: 100%;
+      background: #000000;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.album-position * {
+  box-sizing: border-box;
+}
+
+.img-position {
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+  transform: scale(1);
+  
+}
+
+ .button-position {
+   display: block;
+   width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  //background-color: rgba(74, 50, 211, 0.5);
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.galery-head-position {
+  display: block;
+  width: 100%;
+ position: absolute;
+ top: 75%;
+ right: 35%;
+ color: black;
+ font-size: 30px;
+ opacity: 0;
+}
+
+.album-position:hover .galery-head-position {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.album-position:hover .button-position {
+  background-color: rgb(3, 173, 215);
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.album-position.color {
+  background-color: rgb(140, 140, 248);
+  
+}
+
+div.album-position:hover .img-position {
+  opacity: 0.5;
+  transform: scale(1.1);
+
+}
+
+div.album-position:hover .img-position {
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.full-width-div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 300px;
+}
+
+.head-div {
+  margin-top: 305px;
+}
+
+.space {
+  margin-bottom: 50px;
+}
+
+
+.head-color {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(3, 173, 215, 0.5);
+  height: 355px;
+}
+
+.single-album-head-div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.single-album-head {
+  height: 400px;
+}
+
+.single-album-title {
+  margin-top: 400px;
+}
+
+.single-head-color {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(3, 173, 215, 0.5);
+  height: 460px;
+}
+
+.image-style {
+  margin-bottom: 20px;
+}
+
+.text-config {
+  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.button_slide {
+ // display: block;
+  width: 100%;
+ //position: absolute;
+ 
+  color: rgb(48, 41, 41);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  //text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(3, 173, 215);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card:hover .slide_right {
+  box-shadow: inset 1100px 0 0 0 rgba(3, 173, 215, 0.5);
+}
